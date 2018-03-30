@@ -1,0 +1,4 @@
+server:
+  port: 8081
+  tomcat:
+  url-encoding: UTF-8
