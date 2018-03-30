@@ -32,6 +32,5 @@ public class Application {
     public static void main(String[] args) {
         // 运行SpringBoot
         SpringApplication.run(Application.class,args);
-        System.out.println(11111111);
     }
 }
