@@ -1,8 +1,8 @@
 package com.donniegao.model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.Data;
+
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -11,6 +11,9 @@ import java.io.Serializable;
  * @author gaoxinpeng
  * @version Id: Role.java, v 0.1 2018/4/1 下午8:41 gaoxinpeng Exp $$
  */
+@Entity
+@Table(name = "role")
+@Data
 public class Role implements Serializable {
 
     @Id

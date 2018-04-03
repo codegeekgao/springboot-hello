@@ -1,4 +1,4 @@
-package com.donniegao.configuration;
+package com.donniegao.test;
 
 import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,7 @@
 package com.donniegao.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -16,6 +17,7 @@ import java.util.List;
  */
 @Entity
 @Table
+@Data
 public class User implements Serializable {
 
     @Id
@@ -33,7 +35,4 @@ public class User implements Serializable {
             inverseJoinColumns = {@JoinColumn(name = "roles_id")})
     private List<Role> roles;
 
-    public User() {
-
-    }
 }

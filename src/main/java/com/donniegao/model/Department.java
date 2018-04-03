@@ -1,6 +1,8 @@
 
 package com.donniegao.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -12,6 +14,7 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "department")
+@Data
 public class Department implements Serializable {
 
     @Id
@@ -23,7 +26,4 @@ public class Department implements Serializable {
     private Long id;
     private String name;
 
-    public Department() {
-
-    }
 }
