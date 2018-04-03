@@ -20,5 +20,5 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     User readByName(String name);
 
-    List<User> getByCreatedateLessThan(Date star);
+    List<User> getByCreateDateLessThan(Date star);
 }
