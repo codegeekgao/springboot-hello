@@ -48,21 +48,25 @@ public class MysqlTest {
         userRepository.deleteAll();
         roleRepository.deleteAll();
         departmentRepository.deleteAll();
+        log.info("删除所有department");
 
         Department department = new Department();
         department.setName("事业");
+        log.info("保存department：{}", department);
         departmentRepository.save(department);
         Assert.notNull(department.getId());
 
         Role role = new Role();
         role.setName("admin");
         roleRepository.save(role);
+        log.info("role：{}", role);
         Assert.notNull(role.getId());
 
         User user = new User();
         user.setName("user");
         user.setCreateDate(new Date());
         userRepository.save(user);
+        log.info("user：{}", user);
         user.setDepartment(department);
 
         List<Role> roles = roleRepository.findAll();
