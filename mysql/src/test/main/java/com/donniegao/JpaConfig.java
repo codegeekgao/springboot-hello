@@ -11,7 +11,6 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
-
 import javax.sql.DataSource;
 import java.util.Properties;
 
@@ -24,6 +23,7 @@ import java.util.Properties;
 @Configuration
 @EnableJpaRepositories(basePackages = "com.donniegao.**.dao")
 public class JpaConfig {
+
     @Bean
     PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor() {
         return new PersistenceExceptionTranslationPostProcessor();
