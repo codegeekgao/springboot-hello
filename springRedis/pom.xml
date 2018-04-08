@@ -11,5 +11,11 @@
 
     <artifactId>spring-redis</artifactId>
 
-
+    <!--添加redis缓存依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+    </dependencies>
 </project>
