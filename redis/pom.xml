@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>springboot-hello</artifactId>
         <groupId>com.donniegao</groupId>
@@ -21,11 +19,13 @@
             <artifactId>gson</artifactId>
             <version>2.2.4</version>
         </dependency>
-        <!--引入项目依赖-->
         <dependency>
             <groupId>com.donniegao</groupId>
-            <artifactId>mysql</artifactId>
-            <version>${project.version}</version>
+            <artifactId>model</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+    <build>
+        <finalName>redis</finalName>
+    </build>
 </project>
