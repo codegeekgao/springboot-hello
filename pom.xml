@@ -10,7 +10,6 @@
     <modules>
         <module>mysql</module>
         <module>redis</module>
-        <module>model</module>
     </modules>
     <packaging>pom</packaging>
 
