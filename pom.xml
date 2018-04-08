@@ -10,7 +10,6 @@
     <modules>
         <module>mysql</module>
         <module>springRedis</module>
-        <module>mongodb</module>
     </modules>
     <packaging>pom</packaging>
 
