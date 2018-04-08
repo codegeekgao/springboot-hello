@@ -22,7 +22,7 @@ public class RedisTest {
     @Test
     public void save() {
 
-        redisTemplate.opsForValue().set("zzp", "big z");
-        Assert.assertEquals("big z", redisTemplate.opsForValue().get("zzp"));
+        redisTemplate.opsForValue().set("admin", "qqq");
+        System.out.println(redisTemplate.opsForValue().get("admin"));
     }
 }
