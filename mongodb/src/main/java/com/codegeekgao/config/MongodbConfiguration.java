@@ -31,7 +31,7 @@ public class MongodbConfiguration extends AbstractMongoConfiguration {
 
     @Override
     protected String getDatabaseName() {
-        return environment.getRequiredProperty("mongo.name");
+        return environment.getRequiredProperty("mongo.database");
     }
 
     @Override
