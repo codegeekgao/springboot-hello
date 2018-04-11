@@ -14,8 +14,8 @@ import java.util.Set;
 /**
  * 用户实体对象
  *
- * @author gaoxinpeng
- * @version Id: User.java, v 0.1 2018/4/11 上午11:38 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: User.java, v 0.1 2018/4/11 上午11:38 DonnieGao Exp $$
  */
 @Document(collection = "user")
 @Data

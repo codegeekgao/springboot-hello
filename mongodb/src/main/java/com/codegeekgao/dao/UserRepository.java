@@ -6,8 +6,8 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 /**
  * 用户接口测试
  *
- * @author gaoxinpeng
- * @version Id: UserRepository.java, v 0.1 2018/4/11 上午11:59 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: UserRepository.java, v 0.1 2018/4/11 上午11:59 DonnieGao Exp $$
  */
 public interface UserRepository extends MongoRepository<User, String> {
     /**

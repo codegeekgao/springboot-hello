@@ -21,8 +21,8 @@ import java.util.Set;
 /**
  * mongodb的测试
  *
- * @author gaoxinpeng
- * @version Id: MongodbTest.java, v 0.1 2018/4/11 下午2:42 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: MongodbTest.java, v 0.1 2018/4/11 下午2:42 DonnieGao Exp $$
  */
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)

@@ -11,8 +11,8 @@ import java.util.List;
 /**
  * 用户接口
  *
- * @author gaoxinpeng
- * @version Id: UserRepository.java, v 0.1 2018/4/1 下午8:59 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: UserRepository.java, v 0.1 2018/4/1 下午8:59 DonnieGao Exp $$
  */
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {

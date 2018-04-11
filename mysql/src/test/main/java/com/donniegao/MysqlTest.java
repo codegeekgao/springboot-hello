@@ -25,8 +25,8 @@ import java.util.List;
 /**
  * 测试mysql连接
  *
- * @author gaoxinpeng
- * @version Id: MysqlTest.java, v 0.1 2018/4/2 下午11:22 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: MysqlTest.java, v 0.1 2018/4/2 下午11:22 DonnieGao Exp $$
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {JpaConfig.class})

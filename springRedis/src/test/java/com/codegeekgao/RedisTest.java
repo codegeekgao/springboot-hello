@@ -8,8 +8,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * @author gaoxinpeng
- * @version Id: RedisTest.java, v 0.1 2018/4/8 下午5:59 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: RedisTest.java, v 0.1 2018/4/8 下午5:59 DonnieGao Exp $$
  */
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)

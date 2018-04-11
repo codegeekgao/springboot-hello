@@ -12,8 +12,8 @@ import java.util.List;
 /**
  * 用户实体
  *
- * @author gaoxinpeng
- * @version Id: User.java, v 0.1 2018/4/1 下午8:09 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: User.java, v 0.1 2018/4/1 下午8:09 DonnieGao Exp $$
  */
 @Entity
 @Table

@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 /**
  * JPA配置类
  *
- * @author gaoxinpeng
- * @version Id: JpaConfiguration.java, v 0.1 2018/4/2 下午10:54 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: JpaConfiguration.java, v 0.1 2018/4/2 下午10:54 DonnieGao Exp $$
  */
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @Configuration

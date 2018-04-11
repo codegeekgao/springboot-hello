@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * springBoot入门程序
  *
- * @author gaoxinpeng
- * @version Id: Application.java, v 0.1 2018/3/28 上午9:31 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Application.java, v 0.1 2018/3/28 上午9:31 DonnieGao Exp $$
  */
 @SpringBootApplication
 @RestController

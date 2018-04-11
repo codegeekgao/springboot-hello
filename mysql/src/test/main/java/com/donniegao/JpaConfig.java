@@ -17,8 +17,8 @@ import java.util.Properties;
 /**
  * jpa配置类
  *
- * @author gaoxinpeng
- * @version Id: JpaConfig.java, v 0.1 2018/4/3 下午11:24 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: JpaConfig.java, v 0.1 2018/4/3 下午11:24 DonnieGao Exp $$
  */
 @Configuration
 @EnableJpaRepositories(basePackages = "com.donniegao.**.dao")

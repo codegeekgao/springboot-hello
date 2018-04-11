@@ -8,8 +8,8 @@ import java.io.Serializable;
 /**
  * 部门实体类
  *
- * @author gaoxinpeng
- * @version Id: Department.java, v 0.1 2018/4/1 下午7:42 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Department.java, v 0.1 2018/4/1 下午7:42 DonnieGao Exp $$
  */
 @Entity
 @Table(name = "department")

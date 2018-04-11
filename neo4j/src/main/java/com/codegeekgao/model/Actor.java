@@ -10,8 +10,8 @@ import java.io.Serializable;
 /**
  * 演员实体类
  *
- * @author gaoxinpeng
- * @version Id: Actor.java, v 0.1 2018/4/11 下午11:56 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Actor.java, v 0.1 2018/4/11 下午11:56 DonnieGao Exp $$
  */
 @Data
 @NodeEntity

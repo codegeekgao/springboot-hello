@@ -13,8 +13,8 @@ import java.io.Serializable;
 /**
  * 角色实体类
  *
- * @author gaoxinpeng
- * @version Id: Role.java, v 0.1 2018/4/12 上午12:05 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Role.java, v 0.1 2018/4/12 上午12:05 DonnieGao Exp $$
  */
 @Data
 @JsonIdentityInfo(generator = JSOGGenerator.class)

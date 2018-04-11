@@ -14,8 +14,8 @@ import java.util.List;
 /**
  * 电影实体类
  *
- * @author gaoxinpeng
- * @version Id: Movie.java, v 0.1 2018/4/12 上午12:02 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: Movie.java, v 0.1 2018/4/12 上午12:02 DonnieGao Exp $$
  */
 @Data
 @JsonIdentityInfo(generator = JSOGGenerator.class) // 解决json序列化的循环饮用

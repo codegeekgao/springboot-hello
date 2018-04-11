@@ -18,8 +18,8 @@ import java.util.List;
 /**
  * mongodb的配置类
  *
- * @author gaoxinpeng
- * @version Id: MongodbConfiguration.java, v 0.1 2018/4/11 下午12:05 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: MongodbConfiguration.java, v 0.1 2018/4/11 下午12:05 DonnieGao Exp $$
  */
 @Configuration
 @PropertySource({"classpath:mongondb.properties"})

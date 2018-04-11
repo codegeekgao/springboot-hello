@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author gaoxinpeng
- * @version Id: MysqlApplication.java, v 0.1 2018/4/3 下午10:43 gaoxinpeng Exp $$
+ * @author DonnieGao
+ * @version Id: MysqlApplication.java, v 0.1 2018/4/3 下午10:43 DonnieGao Exp $$
  */
 @RestController
 @SpringBootApplication
