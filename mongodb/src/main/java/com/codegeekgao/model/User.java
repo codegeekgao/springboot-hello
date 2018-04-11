@@ -49,10 +49,10 @@ public class User implements Serializable {
     private Set<String> roles = new HashSet<>();
 
     @PersistenceConstructor
-    public User(String userId, String username, String password, String name, String email,
+    public User(String userId, String userName, String password, String name, String email,
                 Date registrationDate, Set<String> roles) {
         this.userId = userId;
-        this.userName = username;
+        this.userName = userName;
         this.password = password;
         this.name = name;
         this.email = email;

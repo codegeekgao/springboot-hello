@@ -37,7 +37,7 @@ public class MongodbConfiguration extends AbstractMongoConfiguration {
     @Override
     @Bean
     public Mongo mongo() throws Exception {
-        ServerAddress serverAddress = new ServerAddress(environment.getRequiredProperty("mongo.port"));
+        ServerAddress serverAddress = new ServerAddress(environment.getRequiredProperty("mongo.host"));
         List<MongoCredential> credentials = new ArrayList<>();
         return new MongoClient(serverAddress, credentials);
     }
