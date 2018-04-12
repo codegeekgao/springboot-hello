@@ -2,6 +2,7 @@ package com.codegeekgao.dao;
 
 import com.codegeekgao.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * 用户接口测试
@@ -9,6 +10,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * @author DonnieGao
  * @version Id: UserRepository.java, v 0.1 2018/4/11 上午11:59 DonnieGao Exp $$
  */
+@Repository
 public interface UserRepository extends MongoRepository<User, String> {
     /**
      * 通过用户名进行用户查询
