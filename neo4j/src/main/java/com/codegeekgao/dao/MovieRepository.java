@@ -21,4 +21,12 @@ public interface MovieRepository extends GraphRepository<Movie> {
      * @return
      */
     Movie findByTitle(@Param("title") String title);
+
+    /**
+     * 模糊查询
+     *
+     * @param title
+     * @return
+     */
+    Movie findByTitleLike(@Param("title") String title);
 }

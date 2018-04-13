@@ -37,54 +37,61 @@ public class Neo4jTest {
         movieRepository.deleteAll();
         actorRepository.deleteAll();
 
-        Movie matrix1 = new Movie();
-        matrix1.setTitle("The Matrix");
-        matrix1.setYear("1999-03-31");
+        Movie firstMovie = new Movie();
+        firstMovie.setTitle("Ready Player One");
+        firstMovie.setYear("2018-03-30");
 
-        Movie matrix2 = new Movie();
-        matrix2.setTitle("The Matrix Reloaded");
-        matrix2.setYear("2003-05-07");
+        Movie secondMovie = new Movie();
+        secondMovie.setTitle("PacificRim: Uprising");
+        secondMovie.setYear("2018-03-23");
 
-        Movie matrix3 = new Movie();
-        matrix3.setTitle("The Matrix Revolutions");
-        matrix3.setYear("2003-10-27");
+        Movie thirdMovie = new Movie();
+        thirdMovie.setTitle("Tomb Raider");
+        thirdMovie.setYear("2018-03-16");
 
-        Actor keanu = new Actor();
-        keanu.setName("Keanu Reeves");
+        Actor chineseActor = new Actor();
+        chineseActor.setName("Daniel Wu");
 
         Actor laurence = new Actor();
-        laurence.setName("Laurence Fishburne");
+        laurence.setName("Jing Tian");
 
-        Actor carrieanne = new Actor();
-        carrieanne.setName("Carrie-Anne Moss");
+        Actor AmericanDirector = new Actor();
+        AmericanDirector.setName("Steven Allan Spielberg");
 
-        matrix1.addRole(keanu, "Neo");
-        matrix1.addRole(laurence, "Morpheus");
-        matrix1.addRole(carrieanne, "Trinity");
-        movieRepository.save(matrix1);
-        Assert.notNull(matrix1.getId());
+        firstMovie.addRole(chineseActor, "Neo");
+        firstMovie.addRole(laurence, "Morpheus");
+        firstMovie.addRole(AmericanDirector, "Trinity");
+        movieRepository.save(firstMovie);
+        Assert.notNull(firstMovie.getId());
 
-        matrix2.addRole(keanu, "Neo");
-        matrix2.addRole(laurence, "Morpheus");
-        matrix2.addRole(carrieanne, "Trinity");
-        movieRepository.save(matrix2);
-        Assert.notNull(matrix2.getId());
+        secondMovie.addRole(chineseActor, "Neo");
+        secondMovie.addRole(laurence, "Morpheus");
+        secondMovie.addRole(AmericanDirector, "Trinity");
+        movieRepository.save(secondMovie);
+        Assert.notNull(secondMovie.getId());
 
-        matrix3.addRole(keanu, "Neo");
-        matrix3.addRole(laurence, "Morpheus");
-        matrix3.addRole(carrieanne, "Trinity");
-        movieRepository.save(matrix3);
-        Assert.notNull(matrix3.getId());
+        thirdMovie.addRole(chineseActor, "Neo");
+        thirdMovie.addRole(laurence, "Morpheus");
+        thirdMovie.addRole(AmericanDirector, "Trinity");
+        movieRepository.save(thirdMovie);
+        Assert.notNull(thirdMovie.getId());
     }
 
 
     @Test
     public void get() {
-        Movie movie = movieRepository.findByTitle("The Matrix");
+        Movie movie = movieRepository.findByTitle("Ready Player One");
         Assert.notNull(movie);
         log.info("===movie=== movie:{}, {}", movie.getTitle(), movie.getYear());
         for (Role role : movie.getRoles()) {
             log.info("====== actor:{}, role:{}", role.getActor().getName(), role.getRole());
         }
+    }
+
+
+    @Test
+    public void testLike() {
+        Movie readyPlayerOne = movieRepository.findByTitleLike("Ready Player One");
+        System.out.println(readyPlayerOne);
     }
 }

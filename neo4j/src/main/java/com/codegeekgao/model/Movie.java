@@ -2,7 +2,7 @@ package com.codegeekgao.model;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.voodoodyne.jackson.jsog.JSOGGenerator;
-import lombok.Data;
+import lombok.ToString;
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
@@ -17,9 +17,9 @@ import java.util.List;
  * @author DonnieGao
  * @version Id: Movie.java, v 0.1 2018/4/12 上午12:02 DonnieGao Exp $$
  */
-@Data
 @JsonIdentityInfo(generator = JSOGGenerator.class) // 解决json序列化的循环饮用
 @NodeEntity
+@ToString
 public class Movie implements Serializable {
     private static final long serialVersionUID = 7121224233459136955L;
     @GraphId
@@ -33,5 +33,29 @@ public class Movie implements Serializable {
         Role role = new Role(actor, this, name);
         this.roles.add(role);
         return role;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
     }
 }
