@@ -17,8 +17,8 @@ import org.springframework.util.Assert;
 /**
  * Neo4j测试类
  *
- * @author gaoxinpeng
- * @version Id: Neo4jTest.java, v 0.1 2018/4/12 下午11:29 gaoxinpeng Exp $$
+ * @author Denniegao
+ * @version Id: Neo4jTest.java, v 0.1 2018/4/12 下午11:29 Denniegao Exp $$
  */
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)

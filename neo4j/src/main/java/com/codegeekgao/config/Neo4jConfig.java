@@ -10,8 +10,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 /**
  * Neo4j配置类
  *
- * @author gaoxinpeng
- * @version Id: Neo4jConfig.java, v 0.1 2018/4/12 下午10:53 gaoxinpeng Exp $$
+ * @author Denniegao
+ * @version Id: Neo4jConfig.java, v 0.1 2018/4/12 下午10:53 Denniegao Exp $$
  */
 @Configuration
 @EnableTransactionManagement

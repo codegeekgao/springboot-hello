@@ -8,8 +8,8 @@ import org.springframework.stereotype.Repository;
 /**
  * 电影接口实现类
  *
- * @author gaoxinpeng
- * @version Id: MovieRepository.java, v 0.1 2018/4/12 下午10:57 gaoxinpeng Exp $$
+ * @author Denniegao
+ * @version Id: MovieRepository.java, v 0.1 2018/4/12 下午10:57 Denniegao Exp $$
  */
 @Repository
 public interface MovieRepository extends GraphRepository<Movie> {
