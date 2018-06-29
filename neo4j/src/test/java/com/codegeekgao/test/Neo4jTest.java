@@ -74,7 +74,7 @@ public class Neo4jTest {
         thirdMovie.addRole(laurence, "Morpheus");
         thirdMovie.addRole(AmericanDirector, "Trinity");
         movieRepository.save(thirdMovie);
-        Assert.notNull(thirdMovie.getId());
+        Assert.notNull(thirdMovie);
     }
 
 
